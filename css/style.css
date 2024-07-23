@@ -795,3 +795,245 @@ label.labelRequired::after {
 .contactSection-cover .pointBox {
     gap: 0px 20px !important;
 }
+
+/* contact-wrapper Css End */
+/* clientTestimonial-wrapper Css Start */
+.clientTestimonial-wrapper .custom-row {
+    margin-inline: -30px;
+}
+
+.clientTestimonial-wrapper .custom-row .pd-1 {
+    padding-inline: 30px;
+}
+
+.clientWrapper .section-heading h2 {
+    color: #31356D;
+    line-height: 36px;
+    padding-bottom: 150px;
+    margin-bottom: 60px;
+}
+
+.clientWrapper .section-heading {
+    position: relative;
+    padding-left: 20px;
+    z-index: 99;
+}
+
+.clientWrapper .section-heading::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-image: url(https://res.cloudinary.com/greatworkperks/image/upload/greatwork-perks/Client-ReviewIcon_uwubyn.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 180px 150px;
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    z-index: -1;
+}
+
+.clientTestimonial-content {
+    padding: 40px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.clientTestimonial-content p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+
+.clientTestimonial-content p:has(span) {
+    margin-bottom: 0px;
+}
+
+.clientTestimonial-content p span {
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+}
+
+.clientTestimonial-icon {
+    width: 90px;
+    height: 90px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.clientTestimonial-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.clientTestimonial-icon {
+    width: 90px;
+    height: 90px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clientTestimonial-cover .slick-list {
+    overflow-y: visible !important;
+    height: 100% !important;
+    position: static;
+}
+
+.clientTestimonial-cover .slick-list .slick-track {
+    height: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 45px;
+    position: static;
+}
+
+.clientTestimonial-cover {
+    margin-inline: -20px;
+}
+
+.clientTestimonial-contentBox {
+    padding-inline: 20px;
+    height: auto !important;
+    flex: 0 0 auto;
+    min-height: auto !important;
+}
+
+.clientTestionmoinal-container {
+    position: relative;
+}
+
+.clientTestimonial-box {
+    position: static;
+}
+
+.clientWrapper {
+    height: 100%;
+}
+
+.clientTestimonial-cover .slick-arrow {
+    width: 50px;
+    height: 40px;
+    border: 2px solid #31356D;
+    background-color: #31356D;
+    border-radius: 20px;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: 78%;
+    transform: translateY(-22%);
+}
+
+.clientTestimonial-cover .slick-arrow:hover {
+    background-color: #fff;
+}
+
+.clientTestimonial-cover .slick-arrow::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-image: url(https://res.cloudinary.com/greatworkperks/image/upload/greatwork-perks/slider-arrow_rqggpz.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 33px 16px;
+}
+
+.clientTestimonial-cover .slick-arrow:hover:before {
+    background-image: url(https://res.cloudinary.com/greatworkperks/image/upload/greatwork-perks/sliderArrow-hover_zqx8ji.png);
+}
+
+.clientTestimonial-cover .slick-prev {
+    left: 0px;
+}
+
+.clientTestimonial-cover .slick-next::before {
+    transform: rotate(180deg);
+}
+
+.clientTestimonial-cover .slick-next {
+    left: 65px;
+}
+
+/* clientTestimonial-wrapper Css End */
+/* about-wrapper Css Start */
+section.aboutSection-wrapper .custom-row {
+    margin-inline: -25px;
+}
+
+section.aboutSection-wrapper .custom-row .pd-1 {
+    padding-inline: 25px;
+}
+
+.aboutSection-imageContent .section-heading p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+.aboutSection-imageContent .section-heading p+p {
+    margin-top: 18px;
+}
+
+.aboutSection-imageContent .section-heading {
+    margin-bottom: 25px;
+}
+
+.aboutSection-imageHeading h3 {
+    font-weight: 700;
+    color: #3155BB;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.aboutSection-imageHeading .section-heading ul {
+    font-weight: 700;
+    list-style: auto;
+    padding-left: 16px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.aboutSection-imageHeading .section-heading ul p span {
+    font-weight: 700;
+}
+
+.aboutSection-imageHeading .section-heading ul p {
+    line-height: 17px;
+}
+
+.aboutSection-imageHeading .section-heading ul li+li {
+    margin-top: 4px;
+}
+a.paraLink {
+    color: #0055FF;
+    text-decoration: underline;
+}
+.aboutSection-image {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
