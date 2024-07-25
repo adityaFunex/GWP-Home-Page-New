@@ -19,10 +19,10 @@ var swiper = new Swiper('.authorizeTicketSwiper-container', {
         },
         768: {
             slidesPerView: 4,
-            spaceBetween: 15
+            spaceBetween: 0
         },
         1024: {
-            slidesPerView: 6,
+            slidesPerView: 8,
             spaceBetween: 20
         },
         1280: {
@@ -190,12 +190,12 @@ $(document).ready(function () {
         autoplaySpeed: 1500,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
