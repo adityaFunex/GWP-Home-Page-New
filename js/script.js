@@ -6,7 +6,7 @@ var swiper = new Swiper('.authorizeTicketSwiper-container', {
     },
     breakpoints: {
         320: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10
         },
         480: {
@@ -115,12 +115,12 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 0,
-        speed: 2000,
+        speed: 2500,
         cssEase: 'linear',
         infinite: true,
         variableWidth: true,
         arrows: false,
-        pauseOnHover: true,
+        pauseOnHover: false,
         responsive: [
             {
                 breakpoint: 1200,
@@ -168,15 +168,6 @@ $(document).ready(function () {
     // Initial call to set tabindex
     setTabIndex();
 
-    $('.brandSlider-cover').on('mouseover', function () {
-        $(this).slick('slickPause');
-        console.log("mouseHover");
-    });
-
-    $('.brandSlider-cover').on('mouseout', function () {
-        $(this).slick('slickPlay');
-        console.log("mouseHoverRemove");
-    });
 });
 
 
@@ -185,7 +176,7 @@ $(document).ready(function () {
     $('.clientTestimonial-box').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         arrows: true,
         autoplaySpeed: 1500,
         responsive: [

@@ -109,8 +109,8 @@
 
     .exclusiveTab-body ul {
         margin-inline: -40px;
-        margin-bottom: 70px;
-        gap: 50px 0px;
+        margin-bottom: 40px;
+        gap: 25px 0px;
     }
 
     .exclusiveTab-body ul li {
@@ -167,7 +167,7 @@
     .contactFrom-wrapper .section-heading h2 {
         font-size: 21px;
         line-height: 31px;
-        margin-bottom: 38px;
+        margin-bottom: 20px;
     }
 
     .contactSection-heading h2 {
@@ -184,7 +184,7 @@
     }
 
     .contactForm-container .row .col-12+.col-12:has(.form-group) {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .formSubmit-btn {
@@ -194,7 +194,7 @@
     }
 
     .contactSection-cover ul li+li {
-        margin-top: 25px;
+        margin-top: 18px;
     }
 
     section.aboutSection-wrapper .custom-row {
@@ -295,10 +295,7 @@
         padding: 13px 35px;
     }
 
-    .exclusiveTab-link::before {
-        border: 3px solid #5C72AC;
-        border-radius: 40px;
-    }
+
 
     .exclusiveTab-link.active::after {
         width: 70%;
@@ -316,8 +313,8 @@
 
     .exclusiveTab-body ul {
         margin-inline: -30px;
-        margin-bottom: 55px;
-        gap: 35px 0px;
+        margin-bottom: 40px;
+        gap: 30px 0px;
     }
 
     .exclusiveTab-body ul li {
@@ -388,7 +385,7 @@
     .contactFrom-wrapper .section-heading h2 {
         font-size: 20px;
         line-height: 30px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     .contact-wrapper .custom-row {
@@ -507,6 +504,30 @@
 
     section.aboutSection-wrapper .custom-row .pd-1 {
         padding-inline: 15px;
+    }
+
+    .aboutUs-wrapperCover .col-lg-3 {
+        width: 20%;
+    }
+
+    .aboutUs-wrapperCover .col-lg-9 {
+        width: 80%;
+    }
+
+    li.exclusiveTab-item:first-child a.exclusiveTab-link.active::before,
+    li.exclusiveTab-item:first-child a.exclusiveTab-link:hover:before {
+        width: 28px;
+        height: 30px;
+        left: -6px;
+        bottom: -18px;
+    }
+
+    li.exclusiveTab-item:last-child a.exclusiveTab-link.active::before,
+    li.exclusiveTab-item:last-child a.exclusiveTab-link:hover:before {
+        width: 28px;
+        height: 30px;
+        right: -6px;
+        bottom: -20px;
     }
 }
 
@@ -729,6 +750,11 @@
         margin-bottom: 18px;
     }
 
+    .aboutUs-wrapperCover>.row>.col-lg-3 .aboutWrapper-imageCover {
+        margin-right: -34px !important;
+        margin-bottom: -64% !important;
+    }
+
     .contactSection-heading p,
     .contactSection-heading h3 {
         font-size: 16px;
@@ -783,6 +809,13 @@
 
     .contact-wrapper .custom-row .pd-1 {
         padding-block: 15px !important;
+    }
+
+    .swiperSlide-btn button {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        font-size: 16px;
     }
 }
 
@@ -861,10 +894,12 @@
         padding: 10px 20px;
         border-radius: 30px;
     }
+
     .exclusiveTab-link {
         font-size: 16px;
         padding: 10px 25px;
     }
+
     .exclusiveTab-link.active::after {
         width: 70%;
         height: 3px;
@@ -872,25 +907,30 @@
         transform: translateX(-50%);
         border-radius: 5px;
     }
+
     .aboutNumber-detail h3 {
         font-size: 30px;
         margin-bottom: 15px;
     }
+
     .aboutNumber-detail {
         min-height: 110px;
         border-radius: 14px;
         height: 100%;
         padding-left: 18px;
     }
+
     .employeeBox p {
         font-size: 15px;
         margin-bottom: 0px;
         line-height: 18px;
     }
+
     .employeeBox-images {
         width: 65px;
         height: 65px;
     }
+
     .clientWrapper .section-heading::before {
         background-size: 129px 100px;
         left: -15px;
@@ -898,74 +938,111 @@
     }
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:992px) {
+
+    .aboutUs-wrapperCover .col-lg-3,
+    .aboutUs-wrapperCover .col-lg-9 {
+        width: 100%;
+    }
+
+    .support-image {
+        position: relative;
+    }
+
+    .aboutWrapper-imageCover {
+        display: none !important;
+    }
+
+    .aboutSection-heading {
+        text-align: center;
+    }
+
+    .exclusiveTab-link {
+        font-size: 14px;
+        padding: 10px 0px;
+    }
+
     .perkAbout-detail h1 {
         font-size: 33px;
         margin-bottom: 15px;
     }
+
     .perkAbout-detail p {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 10px;
     }
+
     .perkAbout-images {
         margin-top: 0px;
         display: flex;
         height: 100%;
         align-items: center;
     }
+
     .pBlock-100 {
         padding-block: 40px;
     }
+
     .section-heading h2 {
         font-size: 18px;
         margin-bottom: 4px;
     }
+
     .globally-cover ul {
         margin-bottom: 30px;
         margin-inline: -15px;
         gap: 15px 0px;
     }
+
     .aboutSection-cover ul li {
         width: 50%;
         flex: 0 0 auto;
         padding-inline: 8px;
     }
+
     .contactFrom-wrapper .section-heading h2 {
         font-size: 17px;
         line-height: 27px;
         margin-bottom: 15px;
     }
+
     .contactForm-container .row .col-12+.col-12:has(.form-group) {
         margin-top: 10px;
     }
+
     .formSubmit-btn {
         padding-block: 10px;
         font-size: 16px;
         border-radius: 30px;
     }
+
     .contactSection-heading h2 {
         font-size: 26px;
         line-height: 36px;
         margin-bottom: 15px;
     }
+
     span.pointContent {
         font-size: 15px;
     }
+
     span.pointIcon {
         width: 18px;
         height: 18px;
     }
+
     .contactSection-cover .pointBox {
         gap: 0px 8px !important;
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     .perkAbout-heading {
         margin-bottom: 30px;
         text-align: center;
     }
+
     .perkAbout-box ul {
         margin-bottom: 30px;
         margin-inline: -15px;
@@ -973,33 +1050,41 @@
         padding-right: 0;
         max-width: 65%;
     }
+
     .perkAbout-box {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .perkAbout-wrapper {
         background: linear-gradient(to bottom, #e3ecfc, #f8f8f8);
         padding-bottom: 0px !important;
     }
+
     .pBlock-50 {
         padding-block: 30px;
     }
+
     .perkAbout-detail p {
         font-size: 13px;
         line-height: 18px;
         margin-bottom: 10px;
     }
+
     span.pointIcon {
         width: 15px;
         height: 15px;
     }
+
     span.pointContent {
         font-size: 14px;
     }
+
     .pointBox {
         gap: 0px 6px;
     }
+
     .perkAbout-images {
         margin-top: 0px;
         display: flex;
@@ -1007,85 +1092,107 @@
         align-items: center;
         margin-inline: -15px;
     }
+
     .perkAbout-images img {
         width: 100%;
     }
+
     .pBlock-100 {
         padding-block: 30px;
     }
+
     .section-heading h2 {
         font-size: 17px;
         margin-bottom: 4px;
     }
+
     .section-heading p {
         font-size: 13px;
         margin-bottom: 0px;
     }
+
     .section-heading {
         margin-bottom: 20px;
     }
+
     .globally-cover ul {
         margin-bottom: 30px;
         margin-inline: -15px;
         gap: 10px 0px;
     }
+
     .globally-cover ul li {
         width: 25%;
         padding-inline: 15px;
     }
+
     .pBlock-60 {
         padding-block: 30px;
     }
+
     .authorizeTicket-logoSlider {
         position: relative;
         padding-inline: 25px;
     }
+
     .swiperSlide-btn button.swiperCustom-prev {
         left: -5px;
         transform: translateY(-50%) rotate(180deg);
     }
+
     .swiperSlide-btn button.swiperCustom-next {
         right: -5px;
     }
+
     .swiperSlide-btn button {
         width: 22px;
         height: 22px;
         border-radius: 50%;
         font-size: 14px;
     }
+
     .aboutWrapper-imageCover {
         display: none;
     }
+
     .aboutSection-heading {
         text-align: center;
     }
+
     .aboutSection-heading h2 br {
         display: none;
     }
+
     .swiperImage {
         display: flex;
         justify-content: center;
     }
+
     .aboutSection-cover ul {
         margin-inline: -8px;
         gap: 15px 0px;
         margin-bottom: 30px;
     }
+
     .aboutUs-wrapperCover {
         padding: 35px 25px;
         border-radius: 15px;
     }
+
     .exclusiveTab-list {
         padding-inline: 3%;
     }
+
     .exclusiveTab-link {
         font-size: 14px;
         padding: 9px 20px;
     }
+
     .exclusiveTab-body ul li {
         width: 25%;
         padding-inline: 15px;
     }
+
     .support-image {
         position: static;
         display: flex;
@@ -1093,37 +1200,47 @@
         margin-top: 30px;
         margin-bottom: -9%;
     }
+
     .supporting-wrapper {
         background: linear-gradient(to bottom, #ffffff, #245AD4);
     }
+
     .section-heading {
         text-align: center;
     }
+
     section.employee-wrapper {
         margin-top: 30px;
     }
+
     section.employee-wrapper .col-12:has(.eployeeSection-heading) {
         order: -1;
     }
+
     .employeeBox-images {
         width: 60px;
         height: 60px;
     }
+
     .employeeBox-images img {
         height: 33px;
     }
+
     .employee-image {
         margin-top: 35px;
         display: flex;
         justify-content: center;
     }
+
     .brandSlider-box {
         height: 270px;
         border-radius: 20px;
     }
+
     .contact-wrapper .row .col-12:has(.contactWrapper-cover) {
         order: -1;
     }
+
     .contactWrapper-cover {
         display: flex;
         flex-direction: column;
@@ -1131,34 +1248,42 @@
         justify-content: space-between;
         text-align: center;
     }
-    .contactSection-heading p, .contactSection-heading h3 {
+
+    .contactSection-heading p,
+    .contactSection-heading h3 {
         font-size: 15px;
         line-height: 25px;
         margin-bottom: 9px;
     }
+
     .contactSection-heading {
         margin-bottom: 10px;
     }
+
     .contactFrom-wrapper .section-heading {
         text-align: left;
     }
+
     .form-group label {
         font-size: 13px;
         margin-bottom: 0px;
         line-height: 19px;
         margin-bottom: 4px;
     }
+
     .formSubmit-btn {
         padding-block: 8px;
         font-size: 14px;
         border-radius: 30px;
     }
+
     .clientWrapper .section-heading h2 {
         color: #31356D;
         line-height: 30px;
         padding-bottom: 30px;
         margin-bottom: 40px;
     }
+
     .clientWrapper .section-heading {
         position: relative;
         padding-left: 20px;
@@ -1167,14 +1292,17 @@
         display: inline-flex;
         height: 78px;
     }
+
     .clientWrapper {
         height: 100%;
         display: flex;
         justify-content: center;
     }
+
     section.clientTestimonial-wrapper {
         padding-top: 20px;
     }
+
     .clientWrapper .section-heading::before {
         background-size: 90px 78px;
         left: -15px;
@@ -1182,16 +1310,19 @@
         top: 50%;
         transform: translateY(-50%);
     }
+
     .clientWrapper .section-heading h2 {
         color: #31356D;
         line-height: 30px;
         padding-bottom: 0px;
         margin-bottom: 0px;
     }
+
     .clientTestimonial-cover {
         position: relative;
         padding-bottom: 25px;
     }
+
     .clientTestimonial-cover .slick-arrow {
         width: 50px;
         height: 35px;
@@ -1200,49 +1331,60 @@
         bottom: 0px;
         transform: translateY(0);
     }
+
     .clientTestimonial-cover .slick-next {
         left: 57%;
         transform: translateX(-43%) !important;
     }
+
     .clientTestimonial-cover .slick-prev {
         left: 47%;
         transform: translateX(-53%) !important;
     }
+
     .aboutSection-image {
         display: none;
     }
+
     .aboutSection-imageHeading .section-heading ul {
         text-align: left;
     }
-    .aboutSection-imageHeading .section-heading ul + p {
+
+    .aboutSection-imageHeading .section-heading ul+p {
         text-align: left;
     }
 }
 
-@media screen and (max-width:676px){
+@media screen and (max-width:676px) {
     .globally-cover ul li {
         width: 33.33%;
         padding-inline: 15px;
     }
+
     .globally-cover ul {
         margin-bottom: 30px;
         margin-inline: -15px;
         gap: 15px 0px;
     }
+
     .perkAbout-detail p {
         font-size: 12px;
         line-height: 17px;
         margin-bottom: 10px;
     }
-    .customCommon-btn, .custom-commonBtn {
+
+    .customCommon-btn,
+    .custom-commonBtn {
         font-size: 13px;
         padding: 10px 20px;
         border-radius: 30px;
     }
+
     .exclusiveTab-body ul li {
         width: 33.333%;
         padding-inline: 15px;
     }
+
     .exclusiveTab-image {
         display: inline-flex;
         height: 100%;
@@ -1250,17 +1392,20 @@
         justify-content: center;
         width: 100%;
     }
+
     .employeeBox p {
         font-size: 13px;
         margin-bottom: 0px;
         line-height: 18px;
     }
+
     .serviceIcon-content h3 {
         font-size: 15px;
         line-height: 21px;
     }
 }
-@media screen and (max-width:575px){
+
+@media screen and (max-width:575px) {
     .aboutNumber-detail {
         min-height: 100%;
         border-radius: 12px;
@@ -1268,57 +1413,71 @@
         padding-left: 18px;
         padding-block: 14px;
     }
+    .exclusiveTab-link {
+        font-size: 10px;
+        padding: 7px 0px;
+        text-align: center;
+    }
+    .clientTestimonial-content{
+        min-height: auto !important;
+    }
+    .exclusiveTab-link.active, .exclusiveTab-link.active:hover, .exclusiveTab-link:hover {
+        color: #fff !important;
+        font-weight: 700;
+        background-color: #4769D2;
+        border-radius: 20px 20px 0px 0px;
+    }
     .aboutNumber-detail h3 {
         font-size: 25px;
         margin-bottom: 10px;
     }
+
     .aboutNumber-detail p {
         font-size: 14px;
         margin-bottom: 0px;
     }
-    .exclusiveTab-link {
-        font-size: 12px;
-        padding: 9px 20px;
-        text-align: center;
-    }
+
+   
+
     .exclusiveTab-list {
         padding-inline: 0%;
     }
-    .exclusiveTab-link {
-        font-size: 12px;
-        padding: 7px 16px;
-        text-align: center;
-    }
+
+   
+
     .exclusiveTab-link.active::after {
         height: 2px;
         border-radius: 5px;
     }
-    .exclusiveTab-link::before {
-        border: 2px solid #5C72AC;
-        border-radius: 40px;
-    }
+
+
+
     .clientTestimonial-cover .slick-prev {
         left: 43%;
         transform: translateX(-57%) !important;
     }
+
     .clientTestimonial-cover .slick-next {
         left: 58%;
         transform: translateX(-42%) !important;
     }
+
     .contact-wrapper .custom-row .pd-1 {
         padding-inline: 15px !important;
     }
 }
 
-@media screen and (max-width:475px){
+@media screen and (max-width:475px) {
     .perkAbout-detail h1 {
         font-size: 30px;
         margin-bottom: 15px;
     }
+
     .perkAbout-heading {
         margin-bottom: 20px;
         text-align: center;
     }
+
     .perkAbout-box ul {
         margin-bottom: 30px;
         margin-inline: -15px;
@@ -1326,37 +1485,46 @@
         padding-right: 0;
         max-width: 100%;
     }
+
     .section-heading h2 {
         font-size: 16px;
         margin-bottom: 4px;
     }
+
     .aboutSection-cover ul li {
         width: 100%;
         flex: 0 0 auto;
         padding-inline: 8px;
     }
+
     .exclusiveTab-link {
-        font-size: 12px;
-        padding: 5px 8px;
+        font-size: 10px;
+        padding: 8px 8px;
         text-align: center;
     }
+
     .exclusiveTab-body {
         padding: 20px 20px;
         border-radius: 10px;
     }
-    .customCommon-btn, .custom-commonBtn {
+
+    .customCommon-btn,
+    .custom-commonBtn {
         font-size: 12px;
         padding: 8px 15px;
         border-radius: 30px;
     }
+
     span.moreIcon img {
         height: 13px;
     }
+
     .moreBtn {
         display: inline-flex;
         align-items: center;
         gap: 0px 15px;
     }
+
     .exclusiveTab-body ul {
         margin-inline: -15px;
         margin-bottom: 25px;

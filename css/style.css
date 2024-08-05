@@ -70,10 +70,9 @@ a {
 }
 
 .perkAbout-images {
-    margin-top: 50px;
     display: flex;
     height: 100%;
-    align-items: end;
+    align-items: center;
 }
 
 span.pointContent {
@@ -221,12 +220,12 @@ span.pointIcon img {
 /* globally-wrapper Css End */
 /* authorizeTicket-wrapper Css Start */
 section.authorizeTicket-wrapper {
-    background: linear-gradient(to right, #3653AC, #303776, #3653AC);
+    background: linear-gradient(to right, #DFE6F9, #ffffff 65%, #DFE6F9);
 }
 
 .authorizeTicket-wrapper .section-heading h2,
 .authorizeTicket-wrapper .section-heading p {
-    color: #fff;
+    color: #000;
 }
 
 .authorizeTicket-logoSlider {
@@ -237,8 +236,8 @@ section.authorizeTicket-wrapper {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 1px solid #fff;
     cursor: pointer !important;
@@ -246,15 +245,16 @@ section.authorizeTicket-wrapper {
     align-items: center;
     justify-content: center;
     z-index: 99;
-    background-color: transparent;
+    background-color: #fff;
     font-size: 16px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .swiperSlide-btn button::after {
-    content: "\f178";
+    content: "\f054";
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
-    color: #fff;
+    color: #BCBDBD;
 }
 
 .swiperSlide-btn button.swiperCustom-next {
@@ -279,7 +279,7 @@ section.authorizeTicket-wrapper {
 
 /* aboutUs-wrapper Css Start */
 .aboutUs-wrapperCover {
-    padding: 50px 35px;
+    padding: 50px 50px;
     border-radius: 15px;
     background: linear-gradient(to bottom right, #ffffff, #3353c4);
 }
@@ -348,16 +348,14 @@ section.authorizeTicket-wrapper {
     z-index: 9;
 }
 
-.aboutWrapper-imageCover {
-    margin-bottom: -47%;
-}
 
 .aboutUs-wrapperCover {
     overflow: hidden;
 }
 
 .aboutUs-wrapperCover>.row>.col-lg-3 .aboutWrapper-imageCover {
-    margin-right: -80px;
+    margin-right: -55px;
+    margin-bottom: -67%;
 }
 
 .aboutWrapper-imageCover img {
@@ -369,6 +367,9 @@ section.authorizeTicket-wrapper {
 /* exclusive-wrapper Css Start */
 .exclusiveTab-content {
     display: none;
+    position: relative;
+    z-index: 99;
+    overflow: hidden;
 }
 
 .exclusiveTab-content.show {
@@ -385,26 +386,76 @@ section.authorizeTicket-wrapper {
     justify-content: center;
     padding: 15px 50px;
     position: relative;
+    width: 100%;
 }
 
 .exclusiveTab-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-inline: 7.5%;
+    padding-inline: 0px !important;
     margin-bottom: 0px;
+    border-radius: 20px 20px 20px 20px;
+    flex-wrap: wrap;
 }
 
-.exclusiveTab-link.active {
-    color: #3C6AD9;
+.exclusiveWrapper-cover {
+    box-shadow: 0 -4px 8px -2px rgba(0, 0, 0, 0.1), -4px 0 8px -2px rgba(0, 0, 0, 0.1), 4px 0 8px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 20px 20px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+li.exclusiveTab-item {
+    width: 33.33%;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.exclusiveTab-list li+li::before {
+    content: "";
+    width: 1px;
+    height: 70%;
+    background-color: #9C9E9F;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
+
+li.exclusiveTab-item:first-child a.exclusiveTab-link.active::before,
+li.exclusiveTab-item:first-child a.exclusiveTab-link:hover:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #4769D2;
+    left: 0px;
+    bottom: -15px;
+}
+
+li.exclusiveTab-item:last-child a.exclusiveTab-link.active::before,
+li.exclusiveTab-item:last-child a.exclusiveTab-link:hover:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #4769D2;
+    right: 0px;
+    bottom: -15px;
+}
+
+.exclusiveTab-link.active,
+.exclusiveTab-link.active:hover,
+.exclusiveTab-link:hover {
+    color: #fff !important;
     font-weight: 800;
+    background-color: #4769D2;
+    border-radius: 20px 20px 0px 0px;
 }
 
-.exclusiveTab-link.active:hover:before {
-    display: none;
-}
 
-.exclusiveTab-link.active::after {
+
+/* .exclusiveTab-link.active::after {
     content: "";
     width: 70%;
     height: 5px;
@@ -415,9 +466,9 @@ section.authorizeTicket-wrapper {
     display: inline-block;
     transform: translateX(-50%);
     border-radius: 5px;
-}
+} */
 
-.exclusiveTab-link::before {
+/* .exclusiveTab-link::before {
     content: "";
     opacity: 0;
     width: 100%;
@@ -430,20 +481,21 @@ section.authorizeTicket-wrapper {
     top: 0px;
     left: 0px;
     display: inline-block;
-}
+} */
 
-.exclusiveTab-link:hover {
+/* .exclusiveTab-link:hover {
     color: #5C72AC;
-}
+} */
 
 .exclusiveTab-link:hover:before {
     opacity: 1;
 }
 
 .exclusiveTab-body {
-    background: linear-gradient(to right, #e6ecf7, #f8fbff);
+    /* background: linear-gradient(to right, #e6ecf7, #f8fbff); */
     padding: 50px 70px;
     border-radius: 20px;
+    background: linear-gradient(to right, #DFE6F9, #ffffff 65%, #DFE6F9);
 }
 
 /* exclusive-wrapper Css End */
@@ -516,7 +568,12 @@ section.authorizeTicket-wrapper {
     height: 100%;
     gap: 5px 0px;
 }
-
+.aboutUs-wrapperCover .col-lg-3 {
+    width: 20%;
+}
+.aboutUs-wrapperCover .col-lg-9{
+    width: 80%;
+}
 .employeeBox-images {
     width: 80px;
     height: 80px;
@@ -555,8 +612,8 @@ section.authorizeTicket-wrapper {
     display: flex;
     flex-wrap: wrap;
     margin-inline: -50px;
-    margin-bottom: 80px;
-    gap: 70px 0px;
+    margin-bottom: 60px;
+    gap: 30px 0px;
     align-items: center;
 }
 
@@ -692,7 +749,7 @@ section.authorizeTicket-wrapper {
     font-weight: 700;
     font-size: 21px;
     line-height: 31px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .form-group label {
@@ -720,9 +777,11 @@ label.labelRequired::after {
 }
 
 .contactForm-container .row .col-12+.col-12:has(.form-group) {
-    margin-top: 25px;
+    margin-top: 20px;
 }
-
+.contactForm-container .row .col-12:has(.formSubmit){
+    margin-top: 0px !important;
+}
 .formSubmit-btn {
     width: 100%;
     display: inline-flex;
@@ -781,8 +840,9 @@ label.labelRequired::after {
     margin-bottom: 0px;
 }
 
+
 .contactSection-cover ul li+li {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .contactWrapper-cover {
@@ -1028,10 +1088,12 @@ section.aboutSection-wrapper .custom-row .pd-1 {
 .aboutSection-imageHeading .section-heading ul li+li {
     margin-top: 4px;
 }
+
 a.paraLink {
     color: #0055FF;
     text-decoration: underline;
 }
+
 .aboutSection-image {
     display: flex;
     height: 100%;
