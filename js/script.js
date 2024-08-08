@@ -115,7 +115,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 0,
-        speed: 2500,
+        speed: 3000,
         cssEase: 'linear',
         infinite: true,
         variableWidth: true,

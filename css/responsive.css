@@ -1531,7 +1531,7 @@
 
     .exclusiveTab-body ul {
         margin-inline: -15px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         gap: 20px 0px;
     }
 }
